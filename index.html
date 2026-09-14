@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DeprecateGuard System Status</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; }
+    .status-ok { color: #28a745; font-weight: bold; }
+    .status-degraded { color: #f1e05a; font-weight: bold; }
+    .status-down { color: #cb2431; font-weight: bold; }
+    .card { border: 1px solid #e1e4e8; border-radius: 6px; padding: 20px; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>DeprecateGuard System Status</h1>
+  <div class="card">
+    <h2>Overall Status: <span class="status-ok">All Systems Operational</span></h2>
+    <p>As a stateless, local-first tool, DeprecateGuard relies minimally on external services.</p>
+  </div>
+  
+  <div class="card">
+    <h3>Service Components</h3>
+    <ul>
+      <li><strong>Local Extractor (CLI):</strong> <span class="status-ok">Operational</span> (Offline)</li>
+      <li><strong>OpenAPI Spec Fetcher:</strong> <span class="status-ok">Operational</span> (Relies on GitHub / APIs.guru availability)</li>
+      <li><strong>Telemetry Database (GitHub Issues):</strong> <span class="status-ok">Operational</span></li>
+      <li><strong>Metrics Dashboard:</strong> <span class="status-ok">Operational</span></li>
+    </ul>
+  </div>
+  
+  <div class="card">
+    <h3>Support & Incident Reporting</h3>
+    <p>To report an incident, email: <code>support@deprecateguard.com</code>.</p>
+    <p><em>Note: As a solo-founder project, no formal SLAs or guaranteed response times are offered.</em></p>
+  </div>
+</body>
+</html>
